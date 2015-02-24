@@ -23,6 +23,7 @@ module Xeroizer
 
       guid          :contact_id
       string        :contact_number
+      string        :account_number
       string        :contact_status
       string        :account_number
       string        :name
