@@ -86,7 +86,7 @@ module Xeroizer
       validates_inclusion_of :type, :in => INVOICE_TYPES
       validates_inclusion_of :status, :in => INVOICE_STATUSES, :unless => :new_record?
       validates_inclusion_of :line_amount_types, :in => LINE_AMOUNT_TYPES, :unless => :new_record?
-      validates_associated :contact
+      # validates_associated :contact
       validates_associated :line_items, :allow_blanks => true, :unless => :approved?
       validates_associated :line_items, :if => :approved?
 
